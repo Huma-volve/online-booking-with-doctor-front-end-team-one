@@ -43,7 +43,7 @@ function SignInWithEmail() {
               src={EmailIcon}
               alt="email icon"
               loading="lazy"
-              className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-4 opacity-80"
+              className="pointer-events-none absolute left-3 top-[2.1rem] -translate-y-1/2 w-5 h-4 opacity-80"
             />
             <input
               className="border border-[#99A2AB] p-3 pl-11 rounded-lg w-full mt-2 mb-4"
@@ -62,7 +62,7 @@ function SignInWithEmail() {
               src={LockIcon}
               loading="lazy"
               alt="lock icon"
-              className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 opacity-80"
+              className="pointer-events-none absolute left-3 top-[2.1rem] -translate-y-1/2 w-5 h-5 opacity-80"
             />
             <input
               className="border border-[#99A2AB] p-3 pl-11 rounded-lg w-full mt-2 mb-4"
