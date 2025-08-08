@@ -6,7 +6,7 @@ function Onboarding1Page() {
     <div className="relative flex flex-col items-center justify-around h-screen">
       <button>
         <Link to="/register" className="text-gray-500 text-lg absolute top-4 right-4">Skip</Link>
-        <img src={Onboarding1} alt="Onboarding1" />
+        <img loading="lazy" src={Onboarding1} alt="Onboarding1" />
       </button>
       <div>
         <div>

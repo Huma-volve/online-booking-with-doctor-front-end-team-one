@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 import GoogleImg from "../../assets/icons/GoogleImg.png";
 import FacebookImg from "../../assets/icons/FacebookImg.png";
@@ -12,6 +11,7 @@ function SignInWithPhone() {
       <div className="">
         <Link to="/SignInWithSocial">
           <img
+          loading="lazy"
             className="block md:hidden absolute top-6 left-4"
             src={ArrowLeft}
             alt="Back"
@@ -54,17 +54,20 @@ function SignInWithPhone() {
                 className="text-lg w-[20px]"
                 src={FacebookImg}
                 alt="FacebookImg"
+                loading="lazy"
               />
             </a>
             <a className="border border-[#99A2AB] rounded-lg p-5 mr-24">
               <img
                 className="text-lg w-[20px]"
+                loading="lazy"
                 src={GoogleImg}
                 alt="GoogleImg"
+                
               />
             </a>
             <a className="border border-[#99A2AB] rounded-lg p-5">
-              <img className="text-lg w-[20px]" src={AppleImg} alt="AppleImg" />
+              <img className="text-lg w-[20px]" src={AppleImg} alt="AppleImg" loading="lazy"/>
             </a>
           </ul>
           <div className="flex items-center justify-center gap-2">

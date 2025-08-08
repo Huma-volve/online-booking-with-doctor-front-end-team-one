@@ -8,7 +8,7 @@ function ChangePassword() {
       <div className="px-3 md:px-0">
         <div className="flex items-center justify-center gap-24 text-lg font-[400] mb-4 d-block md:hidden absolute top-6 left-4">
           <Link to="/ForgetPassword">
-            <img className="" src={ArrowLeft} alt="Back" />
+            <img className="" src={ArrowLeft} alt="Back" loading="lazy" />
           </Link>
           <p>Set new password</p>
         </div>
@@ -20,6 +20,7 @@ function ChangePassword() {
           {/* EMAIL */}
           <div className="relative mb-6">
             <img
+            loading="lazy"
               src={LockIcon}
               alt="lock icon"
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 opacity-80"
@@ -34,6 +35,7 @@ function ChangePassword() {
           <div className="relative">
             <img
               src={LockIcon}
+              loading="lazy"
               alt="lock icon"
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 opacity-80"
             />

@@ -36,7 +36,7 @@ export default function PaymentCards() {
             ))
           ) : (
             <div className="flex flex-col items-center justify-between">
-              <img src={criditcardImg} alt="credit card" />
+              <img loading="lazy" src={criditcardImg} alt="credit card" />
               <h1 className="text-lg">Nothing to display here!</h1>
               <p className="text-xs text-[#99A2AB]">
                 Add your cards to make payment easier

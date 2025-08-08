@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import closeEyeIcon from "../../assets/icons/close-eye-icon.svg";
 import openEyeIcon from "../../assets/icons/open-eye-icon.svg";
@@ -26,6 +27,7 @@ export default function PasswordInput({ title, defaultValue = "password" }) {
           className="p-1"
         >
           <img
+          loading="lazy"
             src={isPasswordVisible ? openEyeIcon : closeEyeIcon}
             alt={isPasswordVisible ? "Hide password" : "Show password"}
             className="w-5 h-5"

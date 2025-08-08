@@ -81,6 +81,7 @@ export default function ReviewSlider({ reviews }) {
               >
                 {[...Array(5)].map((_, i) => (
                   <img
+                  loading="lazy"
                     key={i}
                     src={reviewStarIcon}
                     alt="Review Star"
@@ -96,6 +97,7 @@ export default function ReviewSlider({ reviews }) {
                 &ldquo;{review.review}&rdquo;
               </blockquote>{" "}
               <img
+              loading="lazy"
                 src={review.avatar}
                 alt={review.name}
                 className="rounded-full object-cover border-4 border-white shadow-md transition-all duration-2000"

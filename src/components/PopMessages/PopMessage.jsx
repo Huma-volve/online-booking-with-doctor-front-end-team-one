@@ -14,7 +14,7 @@ export default function PopMessage({ shown, onClose }) {
         className="bg-white p-6 rounded-xl shadow-lg max-w-sm w-[90%]"
       >
         <div className="flex flex-col items-center text-center">
-          <img src={warning} alt="warning" className="w-20 h-20 mb-4" />
+          <img loading="lazy"src={warning} alt="warning" className="w-20 h-20 mb-4" />
           <h2 className="text-xl font-bold text-orange-400 mb-2">Warning!</h2>
           <p className="text-gray-500 mb-2">
             Cancellation must be made at least 24 hours in advance to receive a refund

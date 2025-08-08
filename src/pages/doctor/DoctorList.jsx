@@ -14,7 +14,7 @@ const DoctorList = () => {
           className="rounded-[30px] shadow-lg  md:w-80 lg:w-100 p-4"
         >
           <div className="flex justify-between gap-[12px]">
-            <img
+            <img loading="lazy"
               src={doctor.image}
               alt={doctor.name}
               className="w-[90px] h-[90px]"
@@ -24,11 +24,11 @@ const DoctorList = () => {
               <p className="text-[#6D7379] text-[13px]">{doctor.specialty}</p>
               <div className="flex justify-between items-center gap-[10px] my-2">
                 <div className="flex items-center gap-2">
-                  <img src={starIcon} alt="rating" />
+                  <img loading="lazy" src={starIcon} alt="rating" />
                   <span>{doctor.rating}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <img src={clockIcon} alt="rating" />
+                  <img  loading="lazy"src={clockIcon} alt="rating" />
                   <span className="text-[12px]">{doctor.date}</span>
                 </div>
               </div>

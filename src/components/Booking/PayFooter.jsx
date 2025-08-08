@@ -3,7 +3,7 @@ import { Link } from "react-router";
 // eslint-disable-next-line react/prop-types
 export default function PayFooter({title , nav}){
  return(
-     <div className=" w-full bottom-0 bg-white py-3 px-7 shadow-lg shadow-black">
+     <div className=" w-full bottom-0 bg-white py-3 px-7 mt-5">
         <div className="flex justify-between items-center mb-3">
           <p className="text-gray-800 font-semibold text-3xl">
             Price<span className="font-light text-sm"> \ hour</span>

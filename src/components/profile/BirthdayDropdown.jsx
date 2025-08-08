@@ -56,6 +56,7 @@ export default function BirthdayDropdown() {
         {selected || label}
         <span className=" text-gray-500">
           <img
+          loading="lazy"
             src={downArrowIcon}
             className={
               openDropdown === id ? "w-[20px] rotate-180" : " w-[20px]"

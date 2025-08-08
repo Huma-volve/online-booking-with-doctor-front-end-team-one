@@ -69,7 +69,7 @@ export default function DoctorFullPage() {
         <div className="w-[75%] flex flex-col">
       <div className="ml-4 flex gap-3 items-center mb-8">
         <Link to="/">
-        <img src={arrowRight} alt="back" className="rotate-180 w-4 h-4" />
+        <img loading="lazy" src={arrowRight} alt="back" className="rotate-180 w-4 h-4" />
         </Link>
         <h2 className="text-gray-700 ">Make an Appoinment</h2>
       </div>
@@ -79,11 +79,11 @@ export default function DoctorFullPage() {
             <div className="flex justify-between items-center mt-4 ml-4">
               <p className="text-gray-500 text-xl">Choose date and time</p>
               <div className="flex gap-4 mr-4 items-center">
-                <img src={calender} alt="calendar icon" className="w-5 h-5" />
+                <img loading="lazy" src={calender} alt="calendar icon" className="w-5 h-5" />
                 <p className="text-lg text-gray-500">August,2024</p>
                 <div className="flex flex-col gap-2 items-center">
-                  <img src={arrow} alt="up arrow" className="w-3" />
-                  <img
+                  <img loading="lazy" src={arrow} alt="up arrow" className="w-3" />
+                  <img loading="lazy"
                     src={arrow}
                     alt="down arrow"
                     className="w-3 rotate-180"
@@ -130,7 +130,7 @@ export default function DoctorFullPage() {
             {/* book */}
             <div className="mt-7 flex justify-between items-center mr-4 ml-4 mb-4">
               <div className="flex gap-2 items-center">
-                <img
+                <img loading="lazy"
                   src={blueCalender}
                   alt="calandar icon"
                   className="w-4 h-4"
@@ -152,7 +152,7 @@ export default function DoctorFullPage() {
               <div className="flex justify-between">
                 <h3 className="font-medium text-[18px]">Reviews and Rating</h3>
                 <div className="flex items-center mr-2 gap-1">
-                  <img src={penIcon} alt="EDit Icon" className="w-4 h-4" />
+                  <img loading="lazy" src={penIcon} alt="EDit Icon" className="w-4 h-4" />
                   <Link to="/add-review">
                   <button className="text-sm text-blue-700">add review</button>
                   </Link>
@@ -161,7 +161,7 @@ export default function DoctorFullPage() {
               <div className="flex justify-between mt-8 items-center">
                 <h2 className="text-4xl font-medium">4.5/5</h2>
                 <div className="flex flex-col items-center gap-1">
-                  <img src={stars} alt="Rating" />
+                  <img loading="lazy" src={stars} alt="Rating" />
                   <p className="text-gray-400 font-medium">1250+ Reviews</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function DoctorFullPage() {
               <div className="flex flex-col p-6 mt-4 mr-4 border rounded-lg shadow border-gray-300">
                 <div className="flex justify-between items-start">
                   <div className="flex gap-2 items-center">
-                    <img
+                    <img loading="lazy"
                       src={patient}
                       alt="patient Review"
                       className="rounded-full bg-[#D7D7E4] w-16 h-14"
@@ -183,7 +183,7 @@ export default function DoctorFullPage() {
                     </div>
                   </div>
                   <div className="flex items-center gap-1 p-2 bg-[#F9E0001A] rounded-lg mt-2">
-                    <img src={yellowstarIcon} alt="icon" className="h-4 w-4" />
+                    <img loading="lazy" src={yellowstarIcon} alt="icon" className="h-4 w-4" />
                     <p className="text-yellow-500 font-medium">4.5</p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function DoctorFullPage() {
               <div className="flex flex-col p-6 mt-4 mr-4 border rounded-lg shadow border-gray-300">
                 <div className="flex justify-between items-start">
                   <div className="flex gap-2 items-center">
-                    <img
+                    <img loading="lazy"
                       src={patient}
                       alt="patient Review"
                       className="rounded-full bg-[#D7D7E4] w-16 h-14"
@@ -207,7 +207,7 @@ export default function DoctorFullPage() {
                     </div>
                   </div>
                   <div className="flex items-center gap-1 p-2 bg-[#F9E0001A] rounded-lg mt-2">
-                    <img src={yellowstarIcon} alt="icon" className="h-4 w-4" />
+                    <img loading="lazy" src={yellowstarIcon} alt="icon" className="h-4 w-4" />
                     <p className="text-yellow-500 font-medium">4.5</p>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function DoctorFullPage() {
         <div className="w-auto flex flex-col bg-gray-100 rounded-lg ml-12">
           {/* profile doctor */}
           <div className="flex flex-col gap-4 items-center mt-8">
-            <img src={doctorlogo} alt="doctor profile" className="w-24 h-24" />
+            <img loading="lazy" src={doctorlogo} alt="doctor profile" className="w-24 h-24" />
             <div className="flex flex-col items-center">
               <h2 className="text-bold text-lg">Dr. Jennifer Turner</h2>
               <p className="text-gray-800 text-sm">Pulmonologist</p>
@@ -234,17 +234,17 @@ export default function DoctorFullPage() {
           {/* about Doctor */}
           <div className="w-full flex justify-between mt-2 p-4">
             <div className="flex flex-col items-center">
-              <img src={profileIcon} alt="profile Icon" className=" bg-white rounded-full p-3" />
+              <img loading="lazy" src={profileIcon} alt="profile Icon" className=" bg-white rounded-full p-3" />
               <h4 className="mt-3 text-gray-900 font-medium text-sm">2,000+</h4>
               <p className="text-sm text-gray-500">patients</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src={medalIcon} alt="Medal Icon" className="bg-white rounded-full p-3" />
+              <img loading="lazy" src={medalIcon} alt="Medal Icon" className="bg-white rounded-full p-3" />
               <h4 className="mt-3 text-gray-900 font-medium text-sm">10+</h4>
               <p className="text-sm text-gray-500">experience</p>
             </div>
             <div className="flex flex-col items-center">
-              <img
+              <img loading="lazy"
                 src={starIcon}
                 alt="Star Icon"
                 className="bg-white rounded-full p-4  mb-1"
@@ -253,7 +253,7 @@ export default function DoctorFullPage() {
               <p className="text-sm text-gray-500">rating</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src={meesageIcon} alt="Messages Icon" className="bg-white rounded-full p-3" />
+              <img loading="lazy" src={meesageIcon} alt="Messages Icon" className="bg-white rounded-full p-3" />
               <h4 className="mt-3 text-gray-900 font-medium text-sm">1,872</h4>
               <p className="text-sm text-gray-500">reviews</p>
             </div>
@@ -281,7 +281,7 @@ export default function DoctorFullPage() {
           </div>
           <div className="flex flex-col mt-3 ml-4 mb-4">
             <h2 className="mb-1 text-xl font-medium p-2">Location</h2>
-            <img src={map} alt="map" className="w-[85%]" />
+            <img loading="lazy" src={map} alt="map" className="w-[85%]" />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const MapSearch = () => {
   return (
     <div className="relative h-[95dvh]">
       <div className="flex  items-center w-[90%] h-[40px] rounded-[10px] text-[13px] px-[16px] py-[8px] gap-4 mt-8 ml-[5%]">
-        <img src={magnifierIcon} alt="search icon" className="w-[20px]" />
+        <img loading="lazy" src={magnifierIcon} alt="search icon" className="w-[20px]" />
         {/* <Link to="/search" className="w-full"> */}
         <input
           className="bg-transparent outline-none text-gray-600 w-full"
@@ -17,7 +17,7 @@ const MapSearch = () => {
         />
         {/* </Link> */}
       </div>
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute right-[20px] top-[75vh]"

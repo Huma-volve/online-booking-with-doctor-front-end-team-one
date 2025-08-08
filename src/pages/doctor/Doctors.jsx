@@ -14,10 +14,10 @@ const Doctors = () => {
     <>
       <div className="hidden md:block">
         <div className="hidden lg:flex justify-evenly items-center px-16 pt-12">
-          <div className="flex justify-between items-center px-4 w-[150px] border border-2 border-[#BBC1C7] rounded-[10px] ">
-            <img src={filter} alt="filter" />
+          <div className="flex justify-between items-center px-4 w-[150px]  border-2 border-[#BBC1C7] rounded-[10px] ">
+            <img loading="lazy" src={filter} alt="filter" />
             <p className="text-[#6D7379] pr-4">Filter</p>
-            <img
+            <img loading="lazy"
               src={arrowIcon}
               alt="arrow"
               className="border-l-2  border-[#BBC1C7] pl-4 py-4 border-"
@@ -31,9 +31,9 @@ const Doctors = () => {
           />
           <Link
             to="/map"
-            className="flex justify-between items-center p-3 w-[100px] border border-2 border-[#BBC1C7] rounded-[10px] "
+            className="flex justify-between items-center p-3 w-[100px]  border-2 border-[#BBC1C7] rounded-[10px] "
           >
-            <img src={routingIcon} alt="filter" />
+            <img loading="lazy" src={routingIcon} alt="filter" />
             <p className="text-[#6D7379] ">Map</p>
           </Link>
         </div>

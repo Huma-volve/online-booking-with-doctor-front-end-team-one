@@ -11,12 +11,12 @@ const Map = () => {
       <div className="flex justify-between items-center px-12 py-3">
         <h1 className="text-[24px]">24 Results</h1>
         <Link to="/doctors">
-          <img src={closeIcon} alt="back" className="w-[15px]" />
+          <img loading="lazy" src={closeIcon} alt="back" className="w-[15px]" />
         </Link>
       </div>
       <div className="flex gap-4 lg:px-36 w-full items-center flex-wrap justify-around">
         <ListMap />
-        <img src={mapImage} alt="map" className="h-[90vh]" />
+        <img loading="lazy" src={mapImage} alt="map" className="h-[90vh]" />
       </div>
     </>
   );

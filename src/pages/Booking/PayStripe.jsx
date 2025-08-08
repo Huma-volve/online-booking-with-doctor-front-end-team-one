@@ -15,7 +15,7 @@ export default function PayStripe() {
       <DoctorHeader />
       <div className="mt-5 flex justify-between ml-4 mr-4">
         <div className="flex gap-2 items-center">
-          <img src={calenderLogo} alt="calender logo" className="w-5 h-5" />
+          <img loading="lazy" src={calenderLogo} alt="calender logo" className="w-5 h-5" />
           <p className="text-gray-900 text-xs font-[400]">
             Friday,July 17 -4:00 pm
           </p>
@@ -44,7 +44,7 @@ export default function PayStripe() {
               />
               <span className="text-gray-500 ml-3 text-lg">Credit Card</span>
             </div>
-            <img src={visaLogo} alt="visa logo" className="w-11" />
+            <img loading="lazy" src={visaLogo} alt="visa logo" className="w-11" />
           </div>
 
           {/* Paypal Option */}
@@ -64,7 +64,7 @@ export default function PayStripe() {
               />
               <span className="text-gray-500 ml-3 text-lg">Paypal</span>
             </div>
-            <img src={payLogo} alt="paypal logo" className="w-11" />
+            <img loading="lazy" src={payLogo} alt="paypal logo" className="w-11" />
           </div>
 
           {/* Apple Pay Option */}
@@ -84,7 +84,7 @@ export default function PayStripe() {
               />
               <span className="text-gray-500 ml-3 text-lg">Apple Pay</span>
             </div>
-            <img src={appleLogo} alt="apple logo" className="w-11" />
+            <img loading="lazy" src={appleLogo} alt="apple logo" className="w-11" />
           </div>
         </div>
         <div className="w-full flex">
@@ -93,7 +93,7 @@ export default function PayStripe() {
           </button> 
         </div>
       </div>
-      <div className="w-full absolute bottom-0">
+      <div className="w-full">
      <PayFooter title="Pay" nav="/myBooking" />
       </div>
     </div>

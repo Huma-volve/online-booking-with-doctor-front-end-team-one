@@ -14,26 +14,26 @@ const MobileDoctorList = () => {
         <Link key={doctor.id} to="/doctorDetailes">
           <div className="flex w-[96%] ml-[2%]  gap-1 justify-between pr-4 border border-[#BBC1C7] rounded-[15px]">
             <div className="flex">
-              <img src={doctor.image} alt={doctor.name} />
+              <img loading="lazy" src={doctor.image} alt={doctor.name} />
               <div className="flex flex-col gap-1 py-3 pl-2 pr-4 ">
                 <h1 className="font-medium text-[14px]">{doctor.name}</h1>
                 <p className="text-[#6D7379] text-[11px]">{doctor.specialty}</p>
                 <div className="flex gap-3 text-[11px]">
                   <div className="flex gap-1 items-center ">
-                    <img src={starIcon} alt="rate" className="w-[16px] " />
+                    <img loading="lazy" src={starIcon} alt="rate" className="w-[16px] " />
                     <p>{doctor.rating}</p>
                   </div>
                   <div className="flex gap-1 items-center">
-                    <img src={clockIcon} alt="date" className="w-[16px] " />
+                    <img loading="lazy" src={clockIcon} alt="date" className="w-[16px] " />
                     <p>{doctor.date}</p>
                   </div>
                 </div>
               </div>
             </div>
             {doctor.like ? (
-              <img src={likedIcon} alt="like" />
+              <img loading="lazy" src={likedIcon} alt="like" />
             ) : (
-              <img src={likeIcon} alt="like" />
+              <img loading="lazy" src={likeIcon} alt="like" />
             )}
           </div>
         </Link>

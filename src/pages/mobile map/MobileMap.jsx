@@ -18,7 +18,7 @@ const MobileMap = () => {
     >
       <div className="flex justify-evenly items-center bg-white w-[90%] ml-[5%]  h-[100px] gap-[16px] rounded-[24px] absolute top-[40px]">
         <Link to="/">
-          <img src={arrowLeftIcon} alt="arrow left" />
+          <img loading="lazy" src={arrowLeftIcon} alt="arrow left" />
         </Link>
         <div className="flex flex-col justify-center items-center ">
           <h1 className="text-[15px]">Current location</h1>
@@ -27,14 +27,14 @@ const MobileMap = () => {
           </p>
         </div>
         <Link to="/map-search">
-          <img
+          <img loading="lazy"
             src={magnifierIcon}
             alt="search "
             className="w-[20px] h-[20px]"
           />
         </Link>
       </div>
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute right-[20px] top-[80vh]"

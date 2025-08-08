@@ -23,7 +23,7 @@ export default function Notifications() {
           ))}
         {notificationsIems.length === 0 && (
           <div className="flex flex-col items-center justify-center h-full">
-            <img src={notificationEmptyImg} alt="credit card" />
+            <img loading="lazy" src={notificationEmptyImg} alt="credit card" />
             <h1 className="text-lg">Nothing to display here!</h1>
             <p className="text-xs text-[#99A2AB]">
               We’ll notify you once we have new notifications.

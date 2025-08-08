@@ -28,11 +28,11 @@ export default function EditProfile() {
   return (
     <div className="mx-3 my-5">
       <Link to=".." relative="path" className="block mb-4 ml-2">
-        <img src={rightArrowIcon} alt="Right Arrow" className="rotate-180" />
+        <img loading="lazy" src={rightArrowIcon} alt="Right Arrow" className="rotate-180" />
       </Link>
       <form>
         <div className="flex flex-col items-center justify-center relative">
-          <img
+          <img loading="lazy"
             src={previewImage}
             alt="Profile"
             className="w-[113px] h-[113px] rounded-full object-cover border-r-2 border-r-[#145DB8]"
@@ -43,7 +43,7 @@ export default function EditProfile() {
             className="w-[24px] h-[24px] absolute left-[62%] top-[78px] sm:left-[55%] lg:left-[53%] bg-gradient-to-l from-[#145eb885] to-[#ffffff98]  rounded-full p-[1px] shadow-md hover:bg-gray-100 transition-colors"
           >
             <div className="flex items-center justify-center w-full h-full bg-white/75 rounded-full  ">
-              <img
+              <img loading="lazy"
                 src={cameraIcon}
                 alt="Camera"
                 className="w-[16px] h-[13px]  "
@@ -60,9 +60,9 @@ export default function EditProfile() {
           />
           <h1>Seif Mohamed</h1>
           <div className=" flex items-center gap-1 text-xs text-gray-500">
-            <img src={locationIcon} alt="Location" />
+            <img loading="lazy" src={locationIcon} alt="Location" />
             <p>129, El-Nasr Street, Cairo</p>
-            <img
+            <img loading="lazy"
               src={downArrowIcon}
               alt="Down Arrow"
               className="inline-block w-4"
@@ -71,7 +71,7 @@ export default function EditProfile() {
         </div>
 
         <div className="flex items-center gap-2 mt-4 bg-[#F5F6F7] pr-[24px] pl-[16px] py-2 rounded-md">
-          <img src={emailIcon} alt="email icon" />
+          <img loading="lazy" src={emailIcon} alt="email icon" />
           <input
             type="email"
             placeholder="Email"
@@ -79,7 +79,7 @@ export default function EditProfile() {
           />
         </div>
         <div className="flex items-center gap-2 mt-4 bg-[#F5F6F7] pr-[24px] pl-[16px] py-2 rounded-md">
-          <img src={fullNameIcon} alt="full name icon" />
+          <img loading="lazy" src={fullNameIcon} alt="full name icon" />
           <input
             type="text"
             placeholder="Full Name"

@@ -10,12 +10,12 @@ const MobileSearch = () => {
     <>
       <div className="flex   gap-2 items-center mt-8 w-[90%] px-8 ">
         <Link to="/home">
-          <img src={arrowLeftIcon} alt="arrow left" />
+          <img loading="lazy" src={arrowLeftIcon} alt="arrow left" />
         </Link>
         <h1 className="font-medium ml-[40%] text-[18px]">Search</h1>
       </div>
       <div className="flex  items-center bg-[#F5F6F7] w-[90%] h-[40px] rounded-[10px] px-[16px] py-[8px] gap-4 mt-8 ml-[5%] ">
-        <img src={magnifierIcon} alt="search icon" className="w-[20px]" />
+        <img  loading="lazy"src={magnifierIcon} alt="search icon" className="w-[20px]" />
         <Link to="/search" className="w-full">
           <input
             className="bg-transparent outline-none text-gray-600 w-full text-[13px]"
@@ -37,7 +37,7 @@ const MobileSearch = () => {
             key={specialty.id}
             className="flex items-center  rounded-[14px] w-fit-content gap-[8px] pt-2  pr-8 pl-4  border-2 "
           >
-            <img
+            <img loading="lazy"
               src={specialty.image}
               alt={specialty.name}
               className="w-[20px] h-[20px] mb-2"

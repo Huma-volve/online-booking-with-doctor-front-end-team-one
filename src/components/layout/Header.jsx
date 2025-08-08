@@ -21,10 +21,10 @@ const Header = () => {
     <>
       <div className="hidden md:flex justify-evenly items-center p-2   lg:mx-[100px] mt-[52px] ">
         <Link to="/home">
-          <img src={logoIcon} alt="logo" />
+          <img loading="lazy" src={logoIcon} alt="logo" />
         </Link>
         <div className="flex items-center bg-[#F5F6F7] w-[50%] h-[40px] rounded-[10px] px-[16px] py-[8px] gap-4">
-          <img src={magnifierIcon} alt="search icon" />
+          <img loading="lazy" src={magnifierIcon} alt="search icon" />
           <Link to="/doctors" className="w-full">
             <input
               className="bg-transparent outline-none text-gray-600 w-full"
@@ -50,6 +50,7 @@ const Header = () => {
           </div>
           {!close ? (
             <img
+            loading="lazy"
               className="cursor-pointer"
               src={vectorIcon}
               alt="list icon"
@@ -57,6 +58,7 @@ const Header = () => {
             />
           ) : (
             <img
+            loading="lazy"
               className="cursor-pointer"
               src={closeListIcon}
               alt="list icon"
@@ -65,6 +67,7 @@ const Header = () => {
           )}
           <Link to="/home/notifications">
             <img
+            loading="lazy"
               className="cursor-pointer"
               src={bellIcon}
               alt="notification icon"
@@ -72,6 +75,7 @@ const Header = () => {
           </Link>
           <Link to="/profile">
             <img
+            loading="lazy"
               className="ml-2 cursor-pointer"
               src={profileImage}
               alt="profile icon"
@@ -87,6 +91,7 @@ const Header = () => {
               <img
                 src={isActive ? homeActiveIcon : homeInactiveIcon}
                 alt="Home icon"
+                loading="lazy"
               />
               <span className={isActive ? "text-[#145DB8]" : "text-[#99A2AB]"}>
                 Home
@@ -102,6 +107,7 @@ const Header = () => {
               <img
                 src={isActive ? bookingActiveIcon : bookingInactiveIcon}
                 alt="Booking icon"
+                loading="lazy"
               />
               <span className={isActive ? "text-[#145DB8]" : "text-[#99A2AB]"}>
                 Booking
@@ -117,6 +123,7 @@ const Header = () => {
               <img
                 src={isActive ? profileActiveIcon : profileInactiveIcon}
                 alt="Profile icon"
+                loading="lazy"
               />
               <span className={isActive ? "text-[#145DB8]" : "text-[#99A2AB]"}>
                 Profile

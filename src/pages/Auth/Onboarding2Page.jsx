@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link } from "react-router";
 import Onboarding2 from "../../assets/images/Onboarding2.png";
 
@@ -12,7 +11,7 @@ function Onboarding2Page() {
         >
           Skip
         </Link>
-        <img src={Onboarding2} alt="Onboarding1" />
+        <img loading="lazy" src={Onboarding2} alt="Onboarding1" />
       </div>
       <div>
         <div>

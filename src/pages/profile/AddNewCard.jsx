@@ -48,7 +48,7 @@ export default function AddNewCard() {
       <CommonSettingsHeader title="Add New Card" />
       <div className="h-[calc(100dvh-100px)]">
         <div className="flex flex-col items-center mb-6">
-          <img src={addNewCardImg} alt="Add New Card" className="mb-6" />
+          <img loading="lazy" src={addNewCardImg} alt="Add New Card" className="mb-6" />
 
           <form className="w-full">
             {/* Cardholder Name */}
@@ -85,7 +85,7 @@ export default function AddNewCard() {
                   onClick={toggleCardNumberVisibility}
                   className="p-1"
                 >
-                  <img
+                  <img loading="lazy"
                     src={isCardNumberVisible ? openEyeIcon : closeEyeIcon}
                     alt={
                       isCardNumberVisible

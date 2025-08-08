@@ -113,11 +113,11 @@ export default function MyBooking() {
             className="hidden md:flex justify-between relative border-gray-300 border-2 py-4 rounded-lg w-[350px]"
             style={{ borderColor: show && "#145DB8" }}>
             <div className="flex gap-2 items-center ml-4">
-              <img src={calendarlogo} alt="calender logo" className="w-4 h-4" />
+              <img loading="lazy" src={calendarlogo} alt="calender logo" className="w-4 h-4" />
               <p>Monday,August 4</p>
             </div>
             <button onClick={() => setShow(!show)}>
-              <img
+              <img loading="lazy"
                 src={Arrowlogo}
                 alt="arrow icon"
                 style={{ transform: show && "rotateX(180deg)" }}
@@ -126,10 +126,10 @@ export default function MyBooking() {
             </button>
           </div>
           {show && (
-            <div className="absolute  z-10 mt-5 p-5 bg-white border rounded-2xl shadow-lg transition-all duration-500 ml-4 mr-3">
+            <div className="absolute z-10 mt-5 p-5 bg-white border rounded-2xl w-[350px]  shadow-lg transition-all duration-500 ml-4 right-3">
               <div className="flex justify-between items-center mb-4 py-2 px-3">
                 <button onClick={prevMonth} className="text-xl">
-                  <img
+                  <img loading="lazy"
                     src={leftarrow}
                     alt="left Arrow"
                     className="rotate-[180deg]"
@@ -137,7 +137,7 @@ export default function MyBooking() {
                 </button>
                 <div className="text-lg font-semibold">{monthLabel}</div>
                 <button onClick={nextMonth} className="text-xl">
-                  <img src={leftarrow} alt="right Arrow" />
+                  <img loading="lazy" src={leftarrow} alt="right Arrow" />
                 </button>
               </div>
 

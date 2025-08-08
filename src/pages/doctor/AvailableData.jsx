@@ -61,7 +61,7 @@ const AvailableData = () => {
       </div>
       <div className="flex items-center justify-between gap-[8px] my-4 w-fit-content w-[150px]">
         <h1 className="text-[#05162C] text-[14px]">Sort </h1>
-        <img src={arrowBottomIcon} alt="sort" className="w-[16px]  my-4" />
+        <img loading="lazy" src={arrowBottomIcon} alt="sort" className="w-[16px]  my-4" />
       </div>
       <div className="flex items-center gap-[8px] my-4 w-fit-content">
         <input

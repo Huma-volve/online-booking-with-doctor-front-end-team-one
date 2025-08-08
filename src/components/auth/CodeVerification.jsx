@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { Link } from "react-router";
 import ArrowLeft from "../../assets/icons/ArrowLeft.png";
 function CodeVerification() {
@@ -27,7 +27,7 @@ function CodeVerification() {
       <div className="">
         <div className="flex items-center justify-center gap-28 text-lg font-[400] mb-4 d-block md:hidden absolute top-6 left-4">
           <Link to="/ForgetPassword">
-            <img className="" src={ArrowLeft} alt="Back" />
+            <img className="" src={ArrowLeft} loading="lazy" alt="Back" />
           </Link>
           <p>Code Verification</p>
         </div>

@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Right side (logo + description + socials) */}
         <div className="flex flex-col gap-5 lg:w-[40%]">
           <div className="flex items-center gap-3">
-            <img src={care} alt="logo" className="w-10" />
+            <img loading="lazy" src={care} alt="logo" className="w-10" />
             <h2 className="text-2xl font-medium">Cure</h2>
           </div>
 
@@ -27,16 +27,16 @@ export default function Footer() {
 
           <div className="flex gap-4 mt-2 flex-wrap">
             <button className="bg-gray-100 rounded-lg p-3">
-              <img src={facebook} alt="facebook icon" />
+              <img loading="lazy" src={facebook} alt="facebook icon" />
             </button>
             <button className="bg-gray-100 rounded-lg p-3">
-              <img src={whats} alt="group icon" />
+              <img loading="lazy" src={whats} alt="group icon" />
             </button>
             <button className="bg-gray-100 rounded-lg p-3">
-              <img src={linked} alt="linkedin icon" />
+              <img loading="lazy" src={linked} alt="linkedin icon" />
             </button>
             <button className="bg-gray-100 rounded-lg p-3">
-              <img src={tube} alt="youtube icon" />
+              <img loading="lazy" src={tube} alt="youtube icon" />
             </button>
           </div>
         </div>
@@ -70,21 +70,21 @@ export default function Footer() {
             <ul className="flex flex-col gap-2 text-gray-300">
               <li>
                 <div className="flex gap-2 items-center">
-                  <img src={phone} alt="phone logo" />
+                  <img loading="lazy" src={phone} alt="phone logo" />
                   <p>Phone</p>
                 </div>
                 <h4 className="ml-5">080 707 555 371</h4>
               </li>
               <li>
                 <div className="flex gap-2 items-center">
-                  <img src={message} alt="email logo" />
+                  <img loading="lazy" src={message} alt="email logo" />
                   <p>Email</p>
                 </div>
                 <h4 className="ml-5">demo@example.com</h4>
               </li>
               <li>
                 <div className="flex gap-2 items-center">
-                  <img src={location} alt="address logo" />
+                  <img loading="lazy" src={location} alt="address logo" />
                   <p>Address</p>
                 </div>
                 <h4 className="max-w-[140px] ml-5">

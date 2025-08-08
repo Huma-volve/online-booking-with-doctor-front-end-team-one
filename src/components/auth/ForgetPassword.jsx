@@ -8,7 +8,7 @@ function ForgetPassword() {
       <div className="">
         <div className="flex items-center justify-center gap-24 text-lg font-[400] mb-4 d-block md:hidden absolute top-6 left-4">
           <Link to="/login">
-            <img className="" src={ArrowLeft} alt="Back" />
+            <img className="" src={ArrowLeft} alt="Back" loading="lazy"/>
           </Link>
           <p>Forget your password</p>
         </div>
@@ -21,6 +21,7 @@ function ForgetPassword() {
             <img
               src={EmailIcon}
               alt="email icon"
+              loading="lazy"
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-4 opacity-80"
             />
             <input

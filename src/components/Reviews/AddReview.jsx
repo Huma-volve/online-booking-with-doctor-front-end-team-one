@@ -47,6 +47,7 @@ export default function AddReview() {
                 <div className="flex items-center ">
                   {[...Array(4)].map((_, i) => (
                     <img
+                    loading="lazy"
                       key={i}
                       src={reviewStarIcon}
                       alt="Review Star"
@@ -54,6 +55,7 @@ export default function AddReview() {
                     />
                   ))}
                   <img
+                  loading="lazy"
                     src={grayStarIcon}
                     alt="Review Star"
                     className="w-5 h-5 mx-0.5"

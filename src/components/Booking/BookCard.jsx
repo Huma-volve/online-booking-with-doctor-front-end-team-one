@@ -15,7 +15,7 @@ export default function BookCard() {
       <div className="border-2 border-gray-200 rounded-2xl ml-2 mr-2">
         <div className="flex items-center justify-between ml-2 mt-2">
           <div className="flex gap-2 items-center">
-            <img src={calenderIcon} alt="calenderICon" />
+            <img loading="lazy" src={calenderIcon} alt="calenderICon" />
             <p className="text-gray-800 text-xs">Monday,July 21 - 11:00 Am</p>
           </div>
           <h3 className="text-blue-500 text-bold text-sm mr-4">Upcoming</h3>
@@ -25,6 +25,7 @@ export default function BookCard() {
           <div className="flex justify-start gap-1">
             <img
               src={doctorIcon}
+              loading="lazy"
               alt="doctor photot"
               className="rounded-full w-12 h-12 "
             />
@@ -35,7 +36,7 @@ export default function BookCard() {
           </div>
         </div>
         <div className="flex ml-2 mt-2 gap-1 items-center">
-          <img src={locationIcon} alt="locationIcon" className="w-3 h-4" />
+          <img src={locationIcon} alt="locationIcon" className="w-3 h-4" loading="lazy" />
           <p className="text-sm text-gray-400 font-sans">
             129,ElNasr Street, Cairo, Egypt
           </p>

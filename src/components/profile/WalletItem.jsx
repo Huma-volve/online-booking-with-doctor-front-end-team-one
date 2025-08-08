@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function WalletItem({ icon, title, isSelected, onSelect }) {
   const handleClick = () => {
     onSelect(title);
@@ -9,7 +10,7 @@ export default function WalletItem({ icon, title, isSelected, onSelect }) {
       className="flex items-center justify-between p-2 bg-gray-100 rounded-md hover:bg-gray-200 transition-colors cursor-pointer"
     >
       <div className="flex items-center ">
-        <img src={icon} alt={title} className="mr-2" />
+        <img loading="lazy" src={icon} alt={title} className="mr-2" />
         <p>{title}</p>
       </div>
       <div className="flex items-center">

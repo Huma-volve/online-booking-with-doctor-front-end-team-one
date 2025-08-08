@@ -19,6 +19,7 @@ export default function MobileAdv() {
           <div className="flex gap-4 mt-12 mb-4">
             <button className="flex items-center gap-2 bg-slate-800 w-[200px] py-3 rounded-xl">
               <img
+              loading="lazy"
                 src={googlePlayIcon}
                 alt="googleIcon"
                 className="ml-4 w-8 h-8"
@@ -30,6 +31,7 @@ export default function MobileAdv() {
             </button>
             <button className="flex items-center gap-2 bg-slate-800 w-[200px] py-3 rounded-xl">
               <img
+              loading="lazy"
                 src={appleBtnIcon}
                 alt="appleIcon"
                 className="ml-4 w-8 h-8"
@@ -42,7 +44,7 @@ export default function MobileAdv() {
           </div>
         </div>
         <div>
-          <img src={phonesImage} alt="mobile app" className="w-[400px]" />
+          <img loading="lazy" src={phonesImage} alt="mobile app" className="w-[400px]" />
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ export default function NotificationItem({ title, message, time }) {
           <div
             className={`flex-shrink-0 size-[60px] flex items-center justify-center rounded-full ${bgColor}`}
           >
-            <img src={icon} alt={title} />
+            <img loading="lazy" src={icon} alt={title} />
           </div>
         )}
         <div className="w-[80%] pl-4 sm:w-[90%]">

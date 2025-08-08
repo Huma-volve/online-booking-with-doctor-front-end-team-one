@@ -9,13 +9,13 @@ import MobileAdv from "../../components/layout/MobileAdv";
 import workImage1 from "../../assets/images/Frame 1000001224.svg";
 import workImage2 from "../../assets/images/Frame 1000001226.svg";
 import workImage3 from "../../assets/images/Frame 1000001232.svg";
-// import starVectorIcon from "../../assets/icons/Vector (1).png";
-// import frameImage from "../../assets/images/Frame 1000001198.png";
-// import calendarIcon from "../../assets/icons/calendar-02.png";
-// import vectorIcon from "../../assets/icons/Vector.svg";
-// import mapImage from "../../assets/images/Frame 1000001255.svg";
-// import starIcon from "../../assets/icons/Star.svg";
-// import clockIcon from "../../assets/icons/Clock Circle.svg";
+import starVectorIcon from "../../assets/icons/Vector (1).png";
+import frameImage from "../../assets/images/Frame 1000001198.png";
+import calendarIcon from "../../assets/icons/calendar-02.png";
+import vectorIcon from "../../assets/icons/Vector.svg";
+import mapImage from "../../assets/images/Frame 1000001255.svg";
+import starIcon from "../../assets/icons/Star.svg";
+import clockIcon from "../../assets/icons/Clock Circle.svg";
 
 const Index = () => {
   console.log(topRatedDoctors);
@@ -46,7 +46,7 @@ const Index = () => {
     <>
       <div className="hidden md:flex flex-col justify-center items-center p-4  m-auto mt-12 gap-[24px] w-[50%]">
         <div className="bg-[#E8EFF8] text-[13px] flex justify-between items-center gap-[8px]  px-3 py-1 rounded-[28px]">
-          <img src="src\assets\icons\Vector (1).png" alt="star" />
+          <img loading="lazy" src={starVectorIcon} alt="star" />
           <p>Upgrade your account</p>
         </div>
         <h1 className="text-[#05162c] font-400 text-[20px] lg:text-[40px]">
@@ -59,7 +59,7 @@ const Index = () => {
           secure.
         </p>
         <div className="bg-[#E8EFF8] text-[13px] flex justify-between items-center gap-[8px]  px-3 py-1 rounded-[28px]">
-          <img src="src\assets\images\Frame 1000001198.png" alt="star" />
+          <img loading="lazy" src={frameImage} alt="star" />
           <p>10k+ happy patients </p>
         </div>
         <div className="flex justify-between flex-col lg:flex-row items-center gap-[32px] text-[14px]">
@@ -68,7 +68,7 @@ const Index = () => {
           </button>
           <Link to="/doctorFull">
             <div className="flex justify-center items-center gap-[8px]  border border-[#145DB8] rounded-[10px] px-[4px] lg:px-[16px] py-[8px]">
-              <img src="src\assets\icons\calendar-02.png" alt="calender" />
+              <img loading="lazy" src={calendarIcon} alt="calender" />
               <p className="text-[#145DB8] ">Book Appointment</p>
             </div>
           </Link>
@@ -83,6 +83,7 @@ const Index = () => {
               className="flex flex-row w-fit-content items-center lg:flex-col  gap-[16px]  flex-wrap lg:w-[30%]  border border-gray-300 p-4 rounded-[30px]"
             >
               <img
+              loading="lazy"
                 src={item.image}
                 alt={item.title}
                 className="w-[50%] lg:w-[400px] hidden lg:flex lg:h-[200px] mt-[-10px] "
@@ -108,15 +109,15 @@ const Index = () => {
               trusted doctors and clinics around you—quick, easy, and local.
             </p>
             <div className="flex justify-center items-center gap-[8px] w-fit-content lg:w-[200px]  border border-[#145DB8] rounded-[10px] m-4 py-[8px]">
-              <img src="src\assets\icons\Vector.svg" alt="calender" />
+              <img loading="lazy" src={vectorIcon} alt="calender" />
               <Link to="/doctors">
                 <p className="text-[#145DB8] ">Search by location</p>
               </Link>
             </div>
           </div>
 
-          <img
-            src="src\assets\images\Frame 1000001255.svg"
+          <img loading="lazy"
+            src={mapImage}
             alt="map"
             className=" w-[80%] lg:w-[30%]"
           />
@@ -143,7 +144,7 @@ const Index = () => {
                 className=" rounded-[30px] shadow-lg w-[350px]  p-4"
               >
                 <div className="flex justify-between gap-[12px]">
-                  <img
+                  <img loading="lazy"
                     src={doctor.image}
                     alt={doctor.name}
                     className="w-[90px] h-[90px]"
@@ -157,12 +158,12 @@ const Index = () => {
                     </p>
                     <div className="flex justify-between items-center gap-[10px] my-2">
                       <div className="flex items-center gap-2">
-                        <img src="src\assets\icons\Star.svg" alt="rating" />
+                        <img loading="lazy" src={starIcon} alt="rating" />
                         <span>{doctor.rating}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <img
-                          src="src\assets\icons\Clock Circle.svg"
+                        <img loading="lazy"
+                          src={clockIcon}
                           alt="rating"
                         />
                         <span>{doctor.date}</span>

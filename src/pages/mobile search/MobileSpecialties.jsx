@@ -9,7 +9,7 @@ const MobileSpecialties = () => {
     <>
       <div className="flex   gap-2 items-center mt-8 w-[90%] px-8 ">
         <Link to="/home">
-          <img src={arrowLeftIcon} alt="arrow left" />
+          <img loading="lazy" src={arrowLeftIcon} alt="arrow left" />
         </Link>
         <h1 className="font-medium ml-[40%] text-[18px]">Specialties</h1>
       </div>
@@ -19,7 +19,7 @@ const MobileSpecialties = () => {
             key={specialty.id}
             className="flex items-center bg-[#F5F6F7] flex-col rounded-[14px] w-fit-content gap-[4px] px-[16px] py-[6px]  border-2 "
           >
-            <img
+            <img loading="lazy"
               src={specialty.image}
               alt={specialty.name}
               className="w-[16px] h-[16px] mb-2"

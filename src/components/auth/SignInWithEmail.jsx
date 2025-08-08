@@ -19,12 +19,14 @@ function SignInWithEmail() {
             className="block md:hidden absolute top-6 left-4"
             src={ArrowLeft}
             alt="Back"
+            loading="lazy"
           />
         </Link>
 
         <img
           className="absolute md:-left-32 md:-top-16 left-[44%] top-24 w-[50px] h-[50px] md:w-[32px] md:h-[32px]"
           src={HeartImg}
+          loading="lazy"
         />
         <h2 className="text-center mb-10 md:mb-4 text-3xl font-[400]">
           Sign in
@@ -44,6 +46,7 @@ function SignInWithEmail() {
             <img
               src={EmailIcon}
               alt="email icon"
+              loading="lazy"
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-4 opacity-80"
             />
             <input
@@ -61,6 +64,7 @@ function SignInWithEmail() {
           <div className="relative">
             <img
               src={LockIcon}
+              loading="lazy"
               alt="lock icon"
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 opacity-80"
             />
@@ -88,13 +92,13 @@ function SignInWithEmail() {
           </div>
           <ul className="flex items-center justify-center md:gap-4 mb-6">
             <a className="border  border-[#99A2AB] rounded-lg p-5 mr-24">
-              <img className="w-[20px]" src={FacebookImg} alt="FacebookImg" />
+              <img loading="lazy" className="w-[20px]" src={FacebookImg} alt="FacebookImg" />
             </a>
             <a className="border  border-[#99A2AB] rounded-lg p-5 mr-24">
-              <img className="w-[20px]" src={GoogleImg} alt="GoogleImg" />
+              <img loading="lazy" className="w-[20px]" src={GoogleImg} alt="GoogleImg" />
             </a>
             <a className="border  border-[#99A2AB] rounded-lg p-5">
-              <img className="w-[20px]" src={AppleImg} alt="AppleImg" />
+              <img loading="lazy" className="w-[20px]" src={AppleImg} alt="AppleImg" />
             </a>
           </ul>
           <div className="flex items-center justify-center gap-2">
@@ -108,11 +112,13 @@ function SignInWithEmail() {
       <img
         src={CurveRight}
         alt="Background Curve"
+        loading="lazy"
         className="absolute opacity-100 w-[930px] 2xl:w-[1254px] right-0 top-0  h-screen hidden xl:block"
       />
       <img
         src={LineCurve}
         alt="Background Curve"
+        loading="lazy"
         className="absolute w-[930px] 2xl:w-[1254px] right-[7px] top-0 opacity-100 h-screen hidden xl:block"
       />
     </div>

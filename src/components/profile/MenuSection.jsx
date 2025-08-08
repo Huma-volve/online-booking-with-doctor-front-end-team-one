@@ -17,7 +17,7 @@ export default function MenuSection({ onLogout }) {
         onClick={handleNotificationToggle}
       >
         <div className="flex items-center">
-          <img src={bellIcon} alt="Notifications" className="mr-2" />
+          <img loading="lazy" src={bellIcon} alt="Notifications" className="mr-2" />
           <p>{"notifications"}</p>
         </div>
         <button

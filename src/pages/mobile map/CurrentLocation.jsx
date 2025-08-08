@@ -16,29 +16,29 @@ const CurrentLocation = () => {
       }}
     >
       <Link to="/home">
-        <img
+        <img loading="lazy"
           src={arrowLeftIcon}
           alt="arrow left"
           className="absolute top-[4vh]  w-[40px] h-[40px] rounded-[25px] shadow-lg bg-white p-2 left-[25px]"
         />
       </Link>
 
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute top-[30vh] right-[50%]"
       />
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute top-[20vh] right-[70%]"
       />
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute top-[60vh] right-[80%]"
       />
-      <img
+      <img loading="lazy"
         src={locationIcon}
         alt="location"
         className="absolute top-[10vh] right-[10%]"

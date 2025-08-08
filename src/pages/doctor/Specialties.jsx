@@ -12,7 +12,7 @@ const Specialties = () => {
             key={specialty.id}
             className="flex items-center  rounded-[14px] w-fit-content gap-[8px] pt-2  pr-8 pl-4  border-2 "
           >
-            <img
+            <img loading="lazy"
               src={specialty.image}
               alt={specialty.name}
               className="w-[20px] h-[20px] mb-2"

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import BsHeartPulseWhite from "../../assets/icons/BsHeartPulseWhite.png";
 function SplashScreen() {
   useEffect(() => {
@@ -10,7 +10,7 @@ function SplashScreen() {
   return (
     <div className="relative bg-[#145DB8] h-screen flex justify-center items-center overflow-hidden">
       <div className="flex flex-col items-center">
-        <img src={BsHeartPulseWhite} alt="Splash Screen" />
+        <img loading="lazy" src={BsHeartPulseWhite} alt="Splash Screen" />
         <div className="flex items-center space-x-2 absolute bottom-20">
           {[...Array(5)].map((_, i) => (
             <div

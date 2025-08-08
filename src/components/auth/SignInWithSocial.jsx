@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 import GoogleImg from "../../assets/icons/GoogleImg.png";
 import FacebookImg from "../../assets/icons/FacebookImg.png";
@@ -11,13 +10,14 @@ function SignInWithSocial() {
       <div className="">
         <Link to="/onboarding2">
           <img
+          loading="lazy"
             className="block md:hidden absolute top-6 left-4"
             src={ArrowLeft}
             alt="Back"
           />
         </Link>
 
-        <img className="m-auto" src={UndrawWelcome} alt="HeartImg" />
+        <img loading="lazy" className="m-auto" src={UndrawWelcome} alt="HeartImg" />
 
         <h2 className="text-center my-10 md:mb-4 text-3xl font-[400]">
           Let’s You In
@@ -26,19 +26,19 @@ function SignInWithSocial() {
           <ul className="flex flex-col">
             <li className="mb-4">
               <button className="w-full border border-[#BBC1C7] text-[#000000] font-[400] text-base py-3 px-4 rounded-lg flex items-center justify-center gap-2">
-                <img src={FacebookImg} alt="Facebook Icon" />
+                <img loading="lazy" src={FacebookImg} alt="Facebook Icon" />
                 Sign in with Facebook
               </button>
             </li>
             <li className="mb-4">
               <button className="w-full border border-[#BBC1C7] text-[#000000] font-[400] text-base py-3 px-4 rounded-lg flex items-center justify-center gap-2">
-                <img src={GoogleImg} alt="Google Icon" />
+                <img  loading="lazy" src={GoogleImg} alt="Google Icon" />
                 Sign in with Google
               </button>
             </li>
             <li className="mb-4">
               <button className="w-full border border-[#BBC1C7] text-[#000000] font-[400] text-base py-3 px-4 rounded-lg flex items-center justify-center gap-2">
-                <img src={AppleImg} alt="Apple Icon" />
+                <img loading="lazy" src={AppleImg} alt="Apple Icon" />
                 Sign in with Apple
               </button>
             </li>

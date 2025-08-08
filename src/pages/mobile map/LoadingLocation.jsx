@@ -25,7 +25,7 @@ const LoadingLocation = () => {
         backgroundPosition: "center",
       }}
     >
-      <img
+      <img loading="lazy"
         src={profileImage}
         alt="profile"
         className="w-[100px] h-[100px] absolute top-[45vh] left-[40%]"

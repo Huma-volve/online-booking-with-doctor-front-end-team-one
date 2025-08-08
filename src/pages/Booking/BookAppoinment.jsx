@@ -36,7 +36,7 @@ export default function BookAppoinment() {
 
   return (
     <div
-      className="bg-white h-screen">
+      className="bg-white h-auto flex flex-col gap-5">
       <DoctorHeader />
       <div className="mt-8 px-4">
         <h2 className="text-lg font-medium">Select a day</h2>
@@ -44,11 +44,12 @@ export default function BookAppoinment() {
           className="flex justify-between mt-3 border-gray-300 border-2 py-3 px-2 rounded-lg w-full"
           style={{ borderColor: show && "#145DB8" }}>
           <div className="flex gap-2 items-center">
-            <img src={calendarlogo} alt="calender logo" className="w-4 h-4" />
+            <img loading="lazy" src={calendarlogo} alt="calender logo" className="w-4 h-4" />
             <p>Monday,August 4</p>
           </div>
           <button onClick={() => setShow(!show)}>
             <img
+            loading="lazy"
               src={Arrowlogo}
               alt="arrow icon"
               style={{ transform: show && "rotateX(180deg)" }}
@@ -62,6 +63,7 @@ export default function BookAppoinment() {
           <div className="flex justify-between items-center mb-4 py-2 px-3">
             <button onClick={prevMonth} className="text-xl">
               <img
+              loading="lazy"
                 src={leftarrow}
                 alt="left Arrow"
                 className="rotate-[180deg]"
@@ -69,7 +71,7 @@ export default function BookAppoinment() {
             </button>
             <div className="text-lg font-semibold">{monthLabel}</div>
             <button onClick={nextMonth} className="text-xl">
-              <img src={leftarrow} alt="right Arrow" />
+              <img loading="lazy" src={leftarrow} alt="right Arrow" />
             </button>
           </div>
 
@@ -110,7 +112,7 @@ export default function BookAppoinment() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 w-full">
+      <div className="w-full self-end">
       <PayFooter title="Continue to pay" nav="/pay" />
       </div>
     </div>
